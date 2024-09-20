@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  height: 100%; /* Ensure full height for body and html */
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the nav is on top of other content */
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+nav .navbar .logo {
+  flex: 1;
+  padding: 15px 20px;
+  height: 100%;
+}
+
+nav .navbar .logo a {
+  color: #000000;
+  font-size: 27px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav .navbar .menu {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navbar .menu li a {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-size: 70px;
+}
+
+/* Activities Section */
+.Activities {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.Activities .content {
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Activities h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.Activities h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.Activities p {
+  font-size: 18px;
+}
+
+.content h1, .content h2, .content p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+/* END OF Activities Section */
+
+/* Act1 Section */
+.Act1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #cb2d2d;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+.Act1 .activity-title {
+  margin-bottom: 20px;
+}
+
+.Act1 .activity-title h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.Act1 .photo-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.Act1 .photo-item {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.Act1 .photo-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Act1 .photo-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.Act1 .photo-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #555;
+}
+
+
+/* End Of Act1 Section */
+
+/* Act2 Section */
+.Act2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #cb2d2d;
+  font-size: 16px;
+  overflow: hidden; /* Ensure no overflow from the video */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place video behind content */
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire section */
+}
+
+.Act2 .content {
+  position: relative; /* Ensure content is above the video */
+  z-index: 1;
+  text-align: center;
+}
+
+.Act2 .activity-title {
+  margin-bottom: 20px;
+}
+
+.Act2 .activity-title h2 {
+  font-size: 2em;
+  color: #fff; /* Adjust text color for visibility on video background */
+}
+
+.Act2 .photo-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.Act2 .photo-item {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight background color for better readability */
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.Act2 .photo-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Act2 .photo-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.Act2 .photo-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+/* End of Act 2*/
+
+
+/* Act 3 */
+
+/* Act3 Section */
+.Act3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+.Act3 .activity-title {
+  margin-bottom: 20px;
+}
+
+.Act3 .activity-title h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.Act3 .video-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.Act3 #video-content {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.Act3 .video-description {
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.Act3 .video-description p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* endof Act 3 */
+
+/* Start of Act 4 */
+
+
+
+.Act4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #cb2d2d;
+  font-size: 16px;
+  overflow: hidden; /* Ensure no overflow from the video */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place video behind content */
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire section */
+}
+
+.Act4 .content {
+  position: relative; /* Ensure content is above the video */
+  z-index: 1;
+  text-align: center;
+}
+
+.Act4 .activity-title {
+  margin-bottom: 20px;
+}
+
+.Act4 .activity-title h2 {
+  font-size: 2em;
+  color: #fff; /* Adjust text color for visibility on video background */
+}
+
+.Act4 .photo-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.Act4 .photo-item {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight background color for better readability */
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.Act4 .photo-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Act4 .photo-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.Act4 .photo-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+
+
+
+
+
+/* endof Act 4 */
+
+
+
+/* Act5 Section */
+.Act5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+.Act5 .activity-title {
+  margin-bottom: 20px;
+}
+
+.Act5 .activity-title h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.Act5 .video-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.Act5 #video-content {
+  width: 100%;
+  max-width: 450px; /* Adjust max-width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.Act5 .video-description {
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.Act5 .video-description p {
+  font-size: 1em;
+  color: #555;
+}
+
+
+/* END OF Act5 Section */
+
+
+/*  Act6 Section */
+
+
+
+.Act6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #cb2d2d;
+  font-size: 16px;
+  overflow: hidden; /* Ensure no overflow from the video */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Place video behind content */
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire section */
+}
+
+.Act6 .content {
+  position: relative; /* Ensure content is above the video */
+  z-index: 1;
+  text-align: center;
+}
+
+.Act6 .activity-title {
+  margin-bottom: 20px;
+}
+
+.Act6 .activity-title h2 {
+  font-size: 2em;
+  color: #fff; /* Adjust text color for visibility on video background */
+}
+
+.Act6 .photo-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.Act6 .photo-item {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight background color for better readability */
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.Act6 .photo-item img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Act6 .photo-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.Act6 .photo-item p {
+  margin: 0;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+
+
+
+
+/* END OF Act6Section */
+
+
+
+
+/* Act 3 */
+
+
+
+
+/* Act7 Section */
+.Act7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+.Act7 .activity-title {
+  margin-bottom: 20px;
+}
+
+.Act7 .activity-title h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.Act7 .video-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.Act7 #video-content {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.Act7 .video-description {
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.Act7 .video-description p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* endof Act 7 */
+
+
+
+
